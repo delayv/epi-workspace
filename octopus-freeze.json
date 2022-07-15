@@ -901,7 +901,7 @@
                 },
                 {
                     "type": "execute",
-                    "cmd": "cd webcardinal && npm run build -- --domain=demo.epi.alp"
+                    "cmd": "cd webcardinal && npm run build"
                 },
                 {
                     "type": "execute",
@@ -1284,15 +1284,15 @@
                 },
                 {
                     "type": "execute",
-                    "cmd": "cd delayv-auth-feat-ssapp && npm run build -- --domain=demo.epi.alp"
+                    "cmd": "cd delayv-auth-feat-ssapp && npm run build"
                 },
                 {
                     "type": "execute",
-                    "cmd": "cd truemedhemo-auth-feat-ssapp && npm run build -- --domain=demo.epi.alp"
+                    "cmd": "cd truemedhemo-auth-feat-ssapp && npm run build"
                 },
                 {
                     "type": "execute",
-                    "cmd": "cd uniqode-auth-feat-ssapp && npm run build -- --domain=demo.epi.alp"
+                    "cmd": "cd uniqode-auth-feat-ssapp && npm run build"
                 },
                 {
                     "type": "execute",
@@ -1300,7 +1300,7 @@
                 },
                 {
                     "type": "execute",
-                    "cmd": "cd acdc-authentication-feature-template && npm run build -- --domain=demo.epi.alp"
+                    "cmd": "cd acdc-authentication-feature-template && npm run build"
                 },
                 {
                     "type": "execute",

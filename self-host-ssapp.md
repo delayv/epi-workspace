@@ -11,9 +11,7 @@ npm run install-acf-ssapps
 Here everything is prepared for domain `demo.epi.alp` but you should adapt to suit your needs.   
 1. Make necessary corrections to file [apihub-root/external-volume/config/bdns.hosts](apihub-root/external-volume/config/bdns.hosts) by adding an bdns entry with the correct domain name. 
 2. Add a file in [apihub-root/external-volume/config/domains](apihub-root/external-volume/config/domains). Take file [demo.epi.alp.json](apihub-root/external-volume/config/domains/demo.epi.alp.json) as template.
-3. You need to add `-- --domain={your_bdomain_name}` in the following tasks in [octopus.json](octopus.json) and [octopus-freeze.json](octopus-freeze.json) :  
-    3.1 Task `prepare-build-mobile` for webcardinal  
-    3.2 Task `build-acf-ssapps` for all the authentication feature SSAPPs you want to host
+3. change `"VAULT_DOMAIN":"vault"` to `"VAULT_DOMAIN":"{your_b_domain}"` in [env.json](env.json)
 
 ```sh
 npm run build-mobile
