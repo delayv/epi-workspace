@@ -23,6 +23,18 @@
       "$ORIGIN"
     ]
   },
+  "demo.epi.alp": {
+    "replicas": [],
+    "brickStorages": [
+      "$ORIGIN"
+    ],
+    "anchoringServices": [
+      "$ORIGIN"
+    ],
+    "notifications": [
+      "$ORIGIN"
+    ]
+  },
   "dev.epi.axl": {
       "replicas": [],
       "brickStorages": [
