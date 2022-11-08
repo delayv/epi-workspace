@@ -16,8 +16,10 @@
     "gtin-dsu-wizard",
     "epi-mapping-engine",
     "epi-mapping-engine-results",
+    "get-gtin-owner",
     "leaflet-web-api",
     "acdc-reporting",
+    "requestForwarder",
     "debugLogger",
     "mq",
     "secrets",
@@ -35,6 +37,10 @@
     "leaflet-web-api": {
       "module": "./../../gtin-resolver",
       "function": "getWebLeaflet"
+    },
+    "get-gtin-owner": {
+      "module": "./../../gtin-resolver",
+      "function": "getGTINOwner"
     },
     "acdc-reporting": {
       "module": "./../../reporting-service/middleware",

@@ -23,7 +23,7 @@
       "$ORIGIN"
     ]
   },
-  "demo.epi.alp": {
+  "localhost.epi": {
     "replicas": [],
     "brickStorages": [
       "$ORIGIN"

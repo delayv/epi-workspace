@@ -1,5 +1,6 @@
 export default {
-  "epiDomain": "epi",
-  "leafletWebApiUrl": "http://localhost:8080/leaflets",
-  "epiProtocolVersion": 1
+  "epiDomain": "localhost.epi",
+  "epiProtocolVersion": 1,
+  "appBuildVersion": "1.6.0",
+  "bdnsUrl": "https://raw.githubusercontent.com/PharmaLedger-IMI/mobile-bdns/master/bdns.json"
 }

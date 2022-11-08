@@ -9,8 +9,8 @@
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "d6a80ff39a897da05595c36241e20952ce455884",
-                    "tag": "v1.0.2"
+                    "commit": "a08c3614e5b7d4a453bf76d2ec480823bf084235",
+                    "tag": "v1.0.3"
                 },
                 {
                     "type": "execute",
@@ -19,49 +19,28 @@
             ]
         },
         {
-            "name": "cardinal",
-            "src": "http://github.com/privatesky/cardinal.git",
+            "name": "opendsu-sdk",
+            "src": "http://github.com/opendsu/opendsu-sdk.git",
             "actions": [
                 {
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "517a141d5b84fd87f69b2e51d838cd410652febd",
-                    "tag": "v0.1.2"
+                    "commit": "684042b5f4cb29e641c35fcd7b909a5e2fc3b4aa",
+                    "tag": "v1.0.1"
                 },
                 {
                     "type": "execute",
-                    "cmd": "cd cardinal && npm install"
-                },
-                {
-                    "type": "execute",
-                    "cmd": "cd cardinal && npm run build"
+                    "cmd": "cd opendsu-sdk && npm install"
                 }
             ]
         },
         {
-            "name": "privatesky",
-            "src": "http://github.com/privatesky/privatesky.git",
-            "actions": [
-                {
-                    "type": "smartClone",
-                    "target": ".",
-                    "collectLog": false,
-                    "commit": "55a044c7bb17f60eecd7ae490f0320e18e799855",
-                    "tag": "v1.0.24"
-                },
-                {
-                    "type": "execute",
-                    "cmd": "cd privatesky && npm install"
-                }
-            ]
-        },
-        {
-            "name": "build privatesky",
+            "name": "build opendsu-sdk",
             "actions": [
                 {
                     "type": "execute",
-                    "cmd": "cd privatesky && npm run build"
+                    "cmd": "cd opendsu-sdk && npm run build"
                 }
             ]
         },
@@ -73,8 +52,8 @@
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "69ba45b4256a6c20fdcdc85f6051f4bef6c0a4f0",
-                    "tag": "v1.0.6"
+                    "commit": "c526b16d638963213f6de68b8ac083ecaef0716a",
+                    "tag": "v1.2.0"
                 },
                 {
                     "type": "execute",
@@ -90,8 +69,8 @@
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "81d48ce57b5704b8fa7a6d3431f8f3adc3a7b48f",
-                    "tag": "v1.0.4"
+                    "commit": "e88700f31ca29afa7beb440e86ef79a067653094",
+                    "tag": "v1.2.1"
                 },
                 {
                     "type": "execute",
@@ -101,14 +80,14 @@
         },
         {
             "name": "apihub-root/demiurge-wallet/loader",
-            "src": "http://github.com/privatesky/web-dossier-loader.git",
+            "src": "http://github.com/opendsu/trust-loader.git",
             "actions": [
                 {
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "734cdac7e3ed3c8c603982fcd7c2022a4bb2a250",
-                    "tag": "v0.2.4"
+                    "commit": "4e6dff921296e891684816eed5b172359515ec0b",
+                    "tag": "v0.3.0"
                 },
                 {
                     "type": "execute",
@@ -126,14 +105,14 @@
         },
         {
             "name": "apihub-root/leaflet-wallet/loader",
-            "src": "http://github.com/privatesky/trust-loader.git",
+            "src": "http://github.com/opendsu/trust-loader.git",
             "actions": [
                 {
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "734cdac7e3ed3c8c603982fcd7c2022a4bb2a250",
-                    "tag": "v0.2.4"
+                    "commit": "4e6dff921296e891684816eed5b172359515ec0b",
+                    "tag": "v0.3.0"
                 },
                 {
                     "type": "execute",
@@ -151,35 +130,31 @@
         },
         {
             "name": "apihub-root/dsu-fabric-wallet/loader",
-            "src": "http://github.com/privatesky/trust-loader.git",
+            "src": "http://github.com/opendsu/trust-loader.git",
             "actions": [
                 {
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "734cdac7e3ed3c8c603982fcd7c2022a4bb2a250",
-                    "tag": "v0.2.4"
+                    "commit": "4e6dff921296e891684816eed5b172359515ec0b",
+                    "tag": "v0.3.0"
                 },
                 {
                     "type": "execute",
                     "cmd": "cd apihub-root/dsu-fabric-wallet/loader && npm install"
-                },
-                {
-                    "type": "execute",
-                    "cmd": "cd apihub-root/dsu-fabric-wallet/loader && npm run build"
                 }
             ]
         },
         {
             "name": "themes/citrus-theme",
-            "src": "http://github.com/privatesky/citrus-theme.git",
+            "src": "http://github.com/opendsu/citrus-theme.git",
             "actions": [
                 {
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "3c699a3e7379301ee45568871ec1c67eb8ba9fb8",
-                    "tag": "v1.0.1"
+                    "commit": "8cfd75200ee63de21de4f1b3552b5e3580b4595a",
+                    "tag": "v1.0.2"
                 },
                 {
                     "type": "execute",
@@ -189,14 +164,14 @@
         },
         {
             "name": "themes/clear-sky-theme",
-            "src": "http://github.com/privatesky/clear-sky-theme.git",
+            "src": "http://github.com/opendsu/clear-sky-theme.git",
             "actions": [
                 {
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "ea67aa737194600bad2f051907354b885a531d9f",
-                    "tag": "v1.0.1"
+                    "commit": "3e170b3cec4d6340f1689332e94de285292de2a5",
+                    "tag": "v1.0.2"
                 },
                 {
                     "type": "execute",
@@ -212,54 +187,12 @@
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "da6b4b0c679fb027c59a8f3473468c522979d0fe",
-                    "tag": "v1.0.1"
+                    "commit": "ca478f5c0ae23ce070f00b1ced554ca26100a824",
+                    "tag": "v1.2.0"
                 },
                 {
                     "type": "execute",
                     "cmd": "cd themes/epi-theme && npm install"
-                }
-            ]
-        },
-        {
-            "name": "dossier-explorer-wallet-prototype",
-            "src": "https://github.com/PrivateSky/dossier-explorer-wallet-prototype.git",
-            "actions": [
-                {
-                    "type": "smartClone",
-                    "target": ".",
-                    "collectLog": false,
-                    "commit": "bcb4b80bc3b4b5576a9dfded5bb169163ec44690",
-                    "tag": "v0.2.1"
-                },
-                {
-                    "type": "execute",
-                    "cmd": "cd dossier-explorer-wallet-prototype && npm install"
-                }
-            ]
-        },
-        {
-            "name": "apihub-root/dsu-explorer/loader",
-            "src": "https://github.com/PrivateSky/trust-loader.git",
-            "actions": [
-                {
-                    "type": "smartClone",
-                    "target": ".",
-                    "collectLog": false,
-                    "commit": "734cdac7e3ed3c8c603982fcd7c2022a4bb2a250",
-                    "tag": "v0.2.4"
-                },
-                {
-                    "type": "execute",
-                    "cmd": "cd apihub-root/dsu-explorer/loader && npm install"
-                },
-                {
-                    "type": "copy",
-                    "src": "apihub-root/dsu-explorer/loader/loader-config.local.json-template",
-                    "target": "apihub-root/dsu-explorer/loader/loader-config.local.json",
-                    "options": {
-                        "overwrite": true
-                    }
                 }
             ]
         },
@@ -271,8 +204,8 @@
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "118350ee08b5b1221b46b70a861b0583491a516b",
-                    "tag": "v1.0.8"
+                    "commit": "a1f06e8d8cbe9eaa98f9a8f8522d10e2b92d6f59",
+                    "tag": "v1.2.0"
                 },
                 {
                     "type": "execute",
@@ -302,8 +235,8 @@
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "357b163b46d94c8ed06af83a61f8d2cf7da2368b",
-                    "tag": "v1.0.0"
+                    "commit": "c7252b85696675fb8c514aa45676c1f404df50cc",
+                    "tag": "v1.2.0"
                 },
                 {
                     "type": "execute",
@@ -313,35 +246,18 @@
         },
         {
             "name": "themes/blue-fluorite-theme",
-            "src": "https://github.com/PrivateSky/blue-fluorite-theme.git",
+            "src": "https://github.com/opendsu/blue-fluorite-theme.git",
             "actions": [
                 {
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "9559e0dc32a4bfd8cd8c6159877171edb857c63d",
+                    "commit": "bd830104fa3aafb54b948b7c2a19f6f303e08a1c",
                     "tag": "v1.0.1"
                 },
                 {
                     "type": "execute",
                     "cmd": "cd themes/blue-fluorite-theme && npm install"
-                }
-            ]
-        },
-        {
-            "name": "dossier-explorer-ssapp",
-            "src": "https://github.com/PrivateSky/dossier-explorer-ssapp.git",
-            "actions": [
-                {
-                    "type": "smartClone",
-                    "target": ".",
-                    "collectLog": false,
-                    "commit": "5af2aaf2b3b862de6fdf209e63aba02a504979c8",
-                    "tag": "v1.0.1"
-                },
-                {
-                    "type": "execute",
-                    "cmd": "cd dossier-explorer-ssapp && npm install"
                 }
             ]
         },
@@ -370,8 +286,8 @@
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "6c797868b31898a09ad3af38ce85132c4937a855",
-                    "tag": "v1.0.4"
+                    "commit": "452213e031825ae2e5d3b851941da6202df45f47",
+                    "tag": "v1.0.6"
                 },
                 {
                     "type": "execute",
@@ -395,8 +311,8 @@
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "a4a77d9b105e620680a4c11c52f678fe7520ea4b",
-                    "tag": "v1.0.5"
+                    "commit": "94897e4b1bc02a889a11bb9f547b26ce4480ea59",
+                    "tag": "v1.2.1"
                 },
                 {
                     "type": "execute",
@@ -412,8 +328,9 @@
                     "type": "smartClone",
                     "target": "./apihub-root/lightweight-pwa/lib",
                     "collectLog": false,
-                    "commit": "e9ec10b58d9ad3c9c07d3868ecf8f918aa440d9c",
-                    "tag": "v1.0.0"
+                    "commit": "f688e293adf1ed3c5f247856d2751da6a4cf83df",
+                    "branch": "temporaryRevert",
+                    "tag": "v1.0.2"
                 }
             ]
         }
@@ -457,15 +374,11 @@
                 },
                 {
                     "type": "execute",
-                    "cmd": "cd apihub-root/dsu-explorer/loader && npm install"
-                },
-                {
-                    "type": "execute",
                     "cmd": "cd apihub-root/demiurge-wallet/loader && npm install"
                 },
                 {
                     "type": "copy",
-                    "src": "./privatesky/psknode/bundles/webshims.js",
+                    "src": "./opendsu-sdk/psknode/bundles/webshims.js",
                     "target": "./apihub-root/bundles/webshims.js",
                     "options": {
                         "overwrite": true
@@ -473,7 +386,7 @@
                 },
                 {
                     "type": "copy",
-                    "src": "./privatesky/psknode/bundles/loaderBoot.js",
+                    "src": "./opendsu-sdk/psknode/bundles/loaderBoot.js",
                     "target": "./apihub-root/bundles/loaderBoot.js",
                     "options": {
                         "overwrite": true
@@ -502,69 +415,7 @@
             ]
         }
     ],
-    "dsu-explorer-build": [
-        {
-            "name": "blue-fluorite-theme-wallet-build",
-            "src": "",
-            "actions": [
-                {
-                    "type": "execute",
-                    "cmd": "cd themes/blue-fluorite-theme && npm run build-dossier"
-                }
-            ]
-        },
-        {
-            "name": "dossier-explorer-wallet-prototype-build",
-            "src": "",
-            "actions": [
-                {
-                    "type": "execute",
-                    "cmd": "cd dossier-explorer-wallet-prototype && npm run build"
-                },
-                {
-                    "type": "copySeed",
-                    "src": "./dossier-explorer-wallet-prototype/seed",
-                    "target": "./apihub-root/external-volume/wallets/dsu-explorer/wallet-patch/seed",
-                    "options": {
-                        "overwrite": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "dsu-explorer_bind_to_dossier-explorer-ssapp",
-            "src": "",
-            "actions": [
-                {
-                    "type": "execute",
-                    "cmd": "cd dossier-explorer-ssapp && npm run build"
-                },
-                {
-                    "type": "copySeed",
-                    "src": "./dossier-explorer-ssapp/seed",
-                    "target": "./apihub-root/external-volume/wallets/dsu-explorer/apps-patch/dossier-explorer-ssapp/seed",
-                    "options": {
-                        "overwrite": true
-                    }
-                },
-                {
-                    "type": "execute",
-                    "cmd": "echo Use this folder template in order to customize the application instance by adding configuration, pages etc. > ./apihub-root/external-volume/wallets/dsu-explorer/apps-patch/dossier-explorer-ssapp/readme"
-                }
-            ]
-        }
-    ],
     "epi-ssapps-and-wallets-build": [
-        {
-            "name": "cardinal-wallet-build",
-            "src": "",
-            "actions": [
-                {
-                    "type": "execute",
-                    "cmd": "cd cardinal && npm run build-dossier"
-                }
-            ]
-        },
         {
             "name": "webcardinal-wallet-build",
             "actions": [
@@ -758,10 +609,6 @@
                 },
                 {
                     "type": "execute",
-                    "cmd": "node ./node_modules/octopus/scripts/setEnv --file=../../../env.json \"node ./bin/octopusRun.js dsu-explorer-build\""
-                },
-                {
-                    "type": "execute",
                     "cmd": "node ./node_modules/octopus/scripts/setEnv --file=../../../env.json \"node ./bin/octopusRun.js postbuild\""
                 }
             ]
@@ -790,14 +637,14 @@
     "install-mobile": [
         {
             "name": "mobile/scan-app/android",
-            "src": "https://github.com/PrivateSky/android-edge-agent",
+            "src": "https://github.com/opendsu/android-edge-agent",
             "actions": [
                 {
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "0fe1811bf6ee1db3eed3db724d0a279a5a156e8a",
-                    "tag": "v1.0.0"
+                    "commit": "ed39157ab5f1e1bd4f86240b1d7be4e90927ae06",
+                    "tag": "v1.0.4"
                 },
                 {
                     "type": "execute",
@@ -813,8 +660,8 @@
                     "type": "smartClone",
                     "target": ".",
                     "collectLog": false,
-                    "commit": "c1aa00d503f166b49a4b0992ad2a8257c5d250b6",
-                    "tag": "v1.0.2"
+                    "commit": "85d480960b0e00255dd6b0f702fd0dd11b9662c4",
+                    "tag": "v1.0.7"
                 },
                 {
                     "type": "execute",
@@ -900,8 +747,8 @@
                     "cmd": "npm run clean"
                 },
                 {
-                    "type": "execute",
-                    "cmd": "cd webcardinal && npm run build"
+                    "type": "remove",
+                    "target": "apihub-root/external-volume/cache"
                 },
                 {
                     "type": "execute",
@@ -967,10 +814,6 @@
                 {
                     "type": "execute",
                     "cmd": "node ./node_modules/octopus/scripts/setEnv --file=../../../env.json \"node ./bin/octopusRun.js prepare-build-mobile\""
-                },
-                {
-                    "type": "execute",
-                    "cmd": "node ./node_modules/octopus/scripts/setEnv --file=../../../env.json \"node ./bin/octopusRun.js build-ssapps-and-configure-apihub-mobile\""
                 }
             ]
         },
@@ -999,12 +842,12 @@
                 },
                 {
                     "type": "copy",
-                    "src": "privatesky/psknode/bundles/pskWebServer.js",
+                    "src": "opendsu-sdk/psknode/bundles/pskWebServer.js",
                     "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/pskWebServer.js"
                 },
                 {
                     "type": "copy",
-                    "src": "privatesky/psknode/bundles/nodeBoot.js",
+                    "src": "opendsu-sdk/psknode/bundles/nodeBoot.js",
                     "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/nodeBoot.js"
                 },
                 {
@@ -1020,7 +863,7 @@
                 {
                     "type": "copy",
                     "src": "./acdc/native-integration/build/bundles/default/camera.js",
-                    "target": "./apihub-root/leaflet-wallet/loader/camera.js",
+                    "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app/camera.js",
                     "options": {
                         "overwrite": true,
                         "ignoreErrors": true
@@ -1028,16 +871,44 @@
                 },
                 {
                     "type": "copy",
-                    "src": "apihub-root/leaflet-wallet",
+                    "src": "./leaflet-ssapp/code",
                     "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app"
                 },
                 {
-                    "type": "remove",
-                    "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app/loader/node_modules"
+                    "type": "copy",
+                    "src": "./preloader/index.html",
+                    "target": "mobile/scan-app/android/app/src/main/assets/preloader.html"
                 },
                 {
-                    "type": "remove",
-                    "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app/loader/.git"
+                    "type": "replaceString",
+                    "src": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app/index.html",
+                    "oldValue": "PLACEHOLDER_THAT_WILL_BE_REPLACED_BY_SW_OR_SERVER_WITH_BASE_TAG",
+                    "newValue": "<base href=\"/\">"
+                },
+                {
+                    "type": "copy",
+                    "src": "./webcardinal/bundle/dist",
+                    "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app/webcardinal"
+                },
+                {
+                    "type": "copy",
+                    "src": "./opendsu-sdk/psknode/bundles/pskruntime.js",
+                    "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app/scripts/bundles/pskruntime.js"
+                },
+                {
+                    "type": "copy",
+                    "src": "./opendsu-sdk/psknode/bundles/webshims.js",
+                    "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app/scripts/bundles/webshims.js"
+                },
+                {
+                    "type": "copy",
+                    "src": "./opendsu-sdk/psknode/bundles/iframeBoot.js",
+                    "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app/scripts/bundles/iframeBoot.js"
+                },
+                {
+                    "type": "copy",
+                    "src": "./gtin-resolver/build/bundles/gtinResolver.js",
+                    "target": "mobile/scan-app/android/app/src/main/assets/nodejs-project/apihub-root/app/scripts/bundles/gtinResolver.js"
                 },
                 {
                     "type": "copy",
@@ -1059,32 +930,32 @@
                 {
                     "type": "copy",
                     "src": "bin/MobileServerLauncher.js",
-                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/MobileServerLauncher.js"
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/serverFiles/MobileServerLauncher.js"
                 },
                 {
                     "type": "copy",
-                    "src": "privatesky/psknode/bundles/pskWebServer.js",
-                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/pskWebServer.js"
+                    "src": "opendsu-sdk/psknode/bundles/pskWebServer.js",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/serverFiles/pskWebServer.js"
                 },
                 {
                     "type": "copy",
-                    "src": "privatesky/psknode/bundles/nodeBoot.js",
-                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/nodeBoot.js"
+                    "src": "opendsu-sdk/psknode/bundles/nodeBoot.js",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/serverFiles/nodeBoot.js"
                 },
                 {
                     "type": "copy",
                     "src": "apihub-root/internal-volume",
-                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/apihub-root/internal-volume"
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/serverFiles/apihub-root/internal-volume"
                 },
                 {
                     "type": "copy",
                     "src": "apihub-root/external-volume",
-                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/apihub-root/external-volume"
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/serverFiles/apihub-root/external-volume"
                 },
                 {
                     "type": "copy",
                     "src": "./acdc/native-integration/build/bundles/ios/camera.js",
-                    "target": "./apihub-root/leaflet-wallet/loader/camera.js",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/app/camera.js",
                     "options": {
                         "overwrite": true,
                         "ignoreErrors": true
@@ -1092,16 +963,44 @@
                 },
                 {
                     "type": "copy",
-                    "src": "apihub-root/leaflet-wallet",
-                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/apihub-root/app"
+                    "src": "./leaflet-ssapp/code",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/app"
                 },
                 {
-                    "type": "remove",
-                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/apihub-root/app/loader/node_modules"
+                    "type": "copy",
+                    "src": "./preloader/index.html",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/preloader.html"
                 },
                 {
-                    "type": "remove",
-                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/apihub-root/app/loader/.git"
+                    "type": "replaceString",
+                    "src": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/app/index.html",
+                    "oldValue": "PLACEHOLDER_THAT_WILL_BE_REPLACED_BY_SW_OR_SERVER_WITH_BASE_TAG",
+                    "newValue": "<base href=\"/\">"
+                },
+                {
+                    "type": "copy",
+                    "src": "./webcardinal/bundle/dist",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/app/webcardinal"
+                },
+                {
+                    "type": "copy",
+                    "src": "./opendsu-sdk/psknode/bundles/pskruntime.js",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/app/scripts/bundles/pskruntime.js"
+                },
+                {
+                    "type": "copy",
+                    "src": "./opendsu-sdk/psknode/bundles/webshims.js",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/app/scripts/bundles/webshims.js"
+                },
+                {
+                    "type": "copy",
+                    "src": "./opendsu-sdk/psknode/bundles/iframeBoot.js",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/app/scripts/bundles/iframeBoot.js"
+                },
+                {
+                    "type": "copy",
+                    "src": "./gtin-resolver/build/bundles/gtinResolver.js",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/app/scripts/bundles/gtinResolver.js"
                 },
                 {
                     "type": "copy",
@@ -1114,7 +1013,7 @@
                 {
                     "type": "copy",
                     "src": "mobile/scan-app/ios/nativeBridge.js",
-                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/apihub-root/nativeBridge.js",
+                    "target": "mobile/scan-app/ios/PSKNodeServer/PSKNodeServer/nodejsProject/app/nativeBridge.js",
                     "options": {
                         "overwrite": true
                     }

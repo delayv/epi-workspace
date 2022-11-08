@@ -1,57 +1,38 @@
 import XMLDisplayService from "../services/XMLDisplayService/XMLDisplayService.js"
-import environment from "../../environment.js";
 import {goToPage} from "../utils/utils.js";
-import {translations} from "../translations.js";
+import LeafletService from "../services/LeafletService.js";
 
 function LeafletController() {
 
   this.leafletLang = window.currentLanguage || "en";
+  let leafletService = new LeafletService();
 
   this.getLeaflet = function () {
     document.querySelector(".loader").setAttribute('style', 'display:block');
 
-    let leafletApiUrl = environment.leafletWebApiUrl + "/" + environment.epiDomain;
-
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    let gtin = urlParams.get("gtin");
-    let batch = urlParams.get("batch");
-    let expiry = urlParams.get("expiry");
-    let fetchUrl = `${leafletApiUrl}?leaflet_type=leaflet&lang=${this.leafletLang}&gtin=${gtin}&expiry=${expiry}`;
-    fetchUrl = batch ? `${fetchUrl}&batch=${batch}` : `${fetchUrl}`
-    let header = new Headers();
-    header.append("epiProtocolVersion", environment.epiProtocolVersion || 1);
-    header.append("getProductData", true);
-    const myRequest = new Request(fetchUrl, {
-      method: "GET",
-      headers: header
-    });
-    fetch(myRequest)
-      .then(response => {
-        response.json().then(result => {
-          console.log(result);
-          if (result.resultStatus === "xml_found") {
-            try {
-              showXML(result);
-              if (result.expired) {
-                showExpired();
-              }
-            } catch (e) {
-              goToPage("error.html")
-            }
+    leafletService.setLeafletLanguage(this.leafletLang);
+    leafletService.getLeafletResult().then((result) => {
+      if (result.resultStatus === "xml_found") {
+        try {
+          showXML(result);
+          if (result.dateStatus === "expired_date") {
+            showExpired();
           }
-          if (result.resultStatus === "no_xml_for_lang") {
-            showAvailableLanguages(result)
+          if (result.dateStatus === "incorrect_date") {
+            showIncorrectDate();
           }
-        }).catch((err) => {
+        } catch (e) {
           goToPage("error.html")
-        });
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        goToPage("error.html")
-      });
+        }
+      }
+      if (result.resultStatus === "no_xml_for_lang") {
+        showAvailableLanguages(result)
+      }
+    }).catch(err => {
+      goToPage("error.html")
+    })
   };
+
   this.handleLeafletAccordion = function () {
     let accordionItems = document.querySelectorAll("div.leaflet-accordion-item");
     accordionItems.forEach((accItem, index) => {
@@ -90,12 +71,17 @@ function LeafletController() {
   let showExpired = function () {
     document.querySelector("#expired-modal").setAttribute('style', 'display:flex !important');
   }
+  let showIncorrectDate = function () {
+    document.querySelector("#incorrect-date-modal").setAttribute('style', 'display:flex !important');
+  }
+
 
   let self = this;
 
   let showXML = function (result) {
     document.querySelector(".product-name").innerText = result.productData.name;
     document.querySelector(".product-description").innerText = result.productData.description;
+    document.querySelector(".leaflet-title-icon").classList.remove("hiddenElement");
     let xmlService = new XMLDisplayService("#leaflet-content");
     let resultDocument = xmlService.getHTMLFromXML(result.pathBase, result.xmlContent);
     let leafletImages = resultDocument.querySelectorAll("img");
@@ -125,7 +111,7 @@ function LeafletController() {
       document.querySelector(".text-section.no-leaflet").setAttribute('style', 'display:none');
       let languagesContainer = document.querySelector(".languages-container");
       result.availableLanguages.forEach((lang, index) => {
-        let langRadio = `<img src="./images/flags/${lang.value}.png" class="language-flag"></img><label for="${lang.value}"> ${lang.label} - (${lang.nativeName})</label> <input type="radio" name="languages" ${index === 0 ? "checked" : ""} value="${lang.value}" id="${lang.value}">`;
+        let langRadio = `<div class="flag-label-wrapper"><img src="./images/flags/${lang.value}.png" class="language-flag"/><span for="${lang.value}"> ${lang.label} - (${lang.nativeName})</span> </div><input type="radio" name="languages" ${index === 0 ? "checked" : ""} value="${lang.value}" id="${lang.value}">`;
         let radioFragment = document.createElement('div');
         radioFragment.classList.add("language-item-container");
         radioFragment.innerHTML = langRadio;
