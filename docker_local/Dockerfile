@@ -1,4 +1,4 @@
-FROM node:14.17.4-buster
+FROM node:16.18.0-buster
 
 RUN npm install -g node-gyp
 
